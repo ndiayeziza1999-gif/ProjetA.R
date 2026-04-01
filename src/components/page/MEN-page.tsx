@@ -1,8 +1,18 @@
+import { Link } from 'react-router-dom'
 import { Menproduits } from '../../data/type'
 
 export default function MENPage() {
   return (
      <section className="bg-white py-16 px-6 md:px-20">
+      <div className=" mb-12">
+          <span className="text-gray-400 text-xs font-medium italic ">
+            <Link to="/">Home</Link> / Men
+          </span>
+          <h2 className="text-2xl font-bold mt-2 text-gray-900">SHOP</h2>
+          <p className="font-medium text-xs mt-8 text-gray-400">
+            Showing all 5 results
+          </p>
+        </div>
             <div className="text-center mb-12">
               <span className="text-gray-400 text-xs font-medium italic tracking-wide">
                 Summer Collection
