@@ -97,10 +97,40 @@ export const products = [
   ];
 
   export const saleProducts = [
-  { id: 1, name: "T-Shirt Name 1", price: "$18.00 – $20.00", category: "Women", image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=500&q=80", discount: "-10%" },
-  { id: 2, name: "T-Shirt Name 4", price: "$17.00 – $19.00", category: "Men", image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80", discount: "-15%" },
-  { id: 3, name: "T-Shirt Name 5", price: "$18.00 – $22.00", category: "Men", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80", discount: "-20%" },
-  { id: 4, name: "T-Shirt Name 7", price: "$28.00 – $32.00", category: "Women", image: "https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&w=500&q=80", discount: "-10%" },
+  { 
+      id: 5,
+      name: "T-Shirt Name 8",
+      price: "$21.00 – $25.00",
+      category: "Women",
+      image: "https://images.pexels.com/photos/35999254/pexels-photo-35999254.jpeg",
+      colors: ["bg-black", "bg-blue-200"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      discount: "-15%" 
+  },
+  { 
+    id: 2, 
+    name: "T-Shirt Name 4", 
+    price: "$17.00 – $19.00", 
+    category: "Men", 
+    image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80", 
+    discount: "-15%" 
+  },
+  { 
+    id: 3, 
+    name: "T-Shirt Name 5", 
+    price: "$18.00 – $22.00", 
+    category: "Men", 
+    image: "https://images.pexels.com/photos/8217533/pexels-photo-8217533.jpeg", 
+    discount: "-20%" 
+  },
+  { 
+    id: 4, 
+    name: "T-Shirt Name 7", 
+    price: "$28.00 – $32.00", 
+    category: "Women", 
+    image: "https://images.pexels.com/photos/6311612/pexels-photo-6311612.jpeg", 
+    discount: "-10%" 
+  },
 ];
 
 

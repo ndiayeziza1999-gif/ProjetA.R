@@ -15,15 +15,15 @@ export default function TSHIRTSPage() {
           <h1 className="text-2xl md:text-5xl font-bold text-black leading-tight mb-8">
             Slick. Modern. Awesome.
           </h1>
-          <button  className="bg-black text-white px-8 py-3 text-sm font-semibold hover:bg-gray-900 transition-colors">
-           Shop Collection           
+          <button  className="bg-black text-white px-8 py-3 text-sm font-semibold hover:bg-gray-900 cursor-pointer transition-colors">
+          Shop Collection           
           </button>
         </div>
-        <div className="absolute right-24  w-1/2 h-full flex items-end justify-center">
+        <div className="absolute right-24 rounded-xl w-1/2 h-full flex items-end justify-center">
           <img
-            src="https://images.pexels.com/photos/12194088/pexels-photo-12194088.jpeg"
-            alt="laperaux"
-            className=" w-full h-120  object-contain"
+            src="https://images.pexels.com/photos/7679789/pexels-photo-7679789.jpeg"
+            alt="Shop "
+            className=" w-full h-full object-contain"
           />
         </div>
       </div>
@@ -150,8 +150,6 @@ export default function TSHIRTSPage() {
                 </span>
                 <h3 className="font-bold text-sm mb-1">{product.name}</h3>
                 <p className="text-gray-600 text-sm">{product.price}</p>
-
-                {/* Couleurs rapides */}
               </div>
             ))}
           </div>
