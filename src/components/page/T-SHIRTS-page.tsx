@@ -18,7 +18,7 @@ export default function TSHIRTSPage() {
   };
   return (
     <>
-      <div className="relative w-full min-h-120 h-screen bg-pink-100 flex items-center overflow-hidden px-10 md:px-20 max-w-7xl">
+      <div className="relative w-full min-h-140 h-screen bg-pink-100 flex items-center overflow-hidden max-w-7xl mx-auto  flex-col md:flex-row ">
         <div className="z-10 max-w-xl px-24">
           <span className="text-gray-500 text-sm font-medium mb-4 block">
             Women
@@ -26,7 +26,7 @@ export default function TSHIRTSPage() {
           <h1 className="text-2xl md:text-5xl font-bold text-black leading-tight mb-8">
             Slick. Modern. Awesome.
           </h1>
-          <button className="bg-black text-white px-8 py-3 text-sm font-semibold hover:bg-gray-900 cursor-pointer transition-colors">
+          <button className="bg-black text-white px-4 py-2 text-sm font-semibold hover:bg-gray-900 cursor-pointer transition-colors">
             Shop Collection
           </button>
         </div>
@@ -140,37 +140,31 @@ export default function TSHIRTSPage() {
         </div>
       </div>
 
+      
       <div className="bg-white">
-        <div className="relative w-full max-w-6xl py-40 px-10">
-          <div className="bg-red-50 grid grid-cols-12 ">
-            <div className="absolute  " />
-            <div className="col-span-12 md:col-span-6  lg:col-span-5 z-20 md:-translate-y-10 md:translate-x-1">
-              <div className=" px-20 ">
-                <img
-                  src="https://images.pexels.com/photos/35554722/pexels-photo-35554722.jpeg"
-                  alt=""
-                  className="w-120 h-120 object-cover "/>
-              </div>
-            </div>
-            <div className="col-span-12 md:col-span-6 lg:col-span-7 py-40 p-8 md:pl-16">
-              <p className="text-gray-400 text-xs uppercase tracking-[0.2em] mb-4">
-                Women
-              </p>
-              <h2 className="text-4xl md:text-2xl font-bold text-gray-900 mb-6">
-                Spring Summer Collection
-              </h2>
-              <p className="text-gray-600 mb-8 max-w-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                quam in, nemo rem, et atque fugit obcaecati ipsam asperiores
-                aspernatur velit consequatur quia soluta doloribus deserunt.
-                Maiores ut minus doloribus?
-              </p>
-              <button className="bg-black text-white px-7 py-3 text-xs font-bold cursor-pointer hover:bg-zinc-800 transition-all">
-                See Whole Collection
-              </button>
-            </div>
-          </div>
+        <div className="mt-40 ml-10 mb-10">
+      <div className="flex items-center relative">
+        <div className="relative w-1/2">
+          <div className="bg-red-50 w-full h-[700px]"></div>
+          <img
+            src="https://images.pexels.com/photos/35554722/pexels-photo-35554722.jpeg"
+            alt="WOMEN"
+            className="absolute -top-20 left-26 w-120 h-[700px] object-cover"/>
         </div>
+        <div className="w-1/2 relative -ml-15 z-10">
+           <p className="text-gray-400 text-xs uppercase tracking-[0.2em] mb-4">Women</p>
+          <h2 className="text-4xl md:text-2xl font-bold text-gray-900 mb-">
+        Spring Summer Collection
+      </h2>
+          <p className="text-gray-600 mb-6 max-w-md">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quam in, nemo rem, et atque fugit obcaecati ipsam asperiores aspernatur velit consequatur quia soluta doloribus deserunt. Maiores ut minus doloribus?
+      </p>
+           <button className="bg-black text-white px-7 py-3 text-xs font-bold  hover:bg-zinc-800 transition-all">
+        See Whole Collection
+      </button>
+        </div>
+      </div>
+    </div>
 
         <section className="py-20 px-10 md:px-20">
           <div className="text-center mb-12">
