@@ -14,7 +14,7 @@ export default function AuthLayout() {
         <img
           src={
             isLoginPage
-              ? ""
+              ? "https://images.pexels.com/photos/26578954/pexels-photo-26578954.jpeg"
               : "https://images.pexels.com/photos/18293808/pexels-photo-18293808.jpeg"
           }
           alt=""

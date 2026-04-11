@@ -15,9 +15,28 @@ export interface Produit {
   category: "Men" | "Women";
   image: string;
   description: string;
+  color: string;
+
 }
 
 
+export const REVIEWS = [
+  {
+    text: "Very good quality T-shirts and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis ipsum!",
+    author: "Jane Oliver",
+    stars: "⭐⭐⭐⭐⭐"
+  },
+  {
+    text: "Des T-shirts conçus avec soin, pensés pour durer et faits pour sublimer ton style au quotidien.",
+    author: "MESSI",
+    stars: "⭐⭐⭐⭐⭐"
+  },
+  {
+    text: "Nos T-shirts allient confort, résistance et élégance pour t’accompagner chaque jour avec assurance",
+    author: "LAMINE YAMALE",
+    stars: "⭐⭐⭐⭐⭐"
+  }
+];
  
 
 export const products = [
@@ -58,42 +77,7 @@ export const products = [
       colors: ["bg-gray-800", "bg-white"],
       sizes: ["XS", "S", "M", "L", "XL"]
     },
-    {
-      id: 5,
-      name: "T-Shirt Name 8",
-      price: "$21.00 – $25.00",
-      category: "Women",
-      image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=500&q=80",
-      colors: ["bg-black", "bg-blue-200"],
-      sizes: ["XS", "S", "M", "L", "XL"]
-    },
-    {
-      id: 6,
-      name: "T-Shirt Name 7",
-      price: "$18.00 – $22.00",
-      category: "Men",
-      image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=500&q=80",
-      colors: ["bg-gray-800", "bg-white"],
-      sizes: ["XS", "S", "M", "L", "XL"]
-    },
-     {
-      id: 7,
-      name: "T-Shirt Name 10",
-      price: "$23.00 – $28.00",
-      category: "Men",
-      image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80",
-      colors: ["bg-black", "bg-pink-200", "bg-white"],
-      sizes: ["XS", "S", "M", "L", "XL"]
-    },
-    {
-      id: 8,
-      name: "T-Shirt Name 9",
-      price: "$23.00 – $28.00",
-      category: "Women",
-      image: "https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&w=500&q=80",
-      colors: ["bg-black", "bg-pink-100", "bg-white"],
-      sizes: ["XS", "S", "M", "L", "XL"]
-    },
+    
   ];
 
   export const saleProducts = [

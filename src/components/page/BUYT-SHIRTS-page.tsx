@@ -27,14 +27,12 @@ export default function BUYTSHIRTSPage() {
           {displayedProducts.map((product) => (
             <div
               key={product.id}
-              className="group cursor-pointer flex flex-col"
-            >
+              className="group cursor-pointer flex flex-col">
               <div className="aspect-[4/5] overflow-hidden bg-gray-100 mb-4 relative">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 "
-                />
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 "/>
               </div>
               <span className="text-xs uppercase tracking-[0.15em] text-gray-400 mb-1">
                 {product.category}
@@ -57,8 +55,7 @@ export default function BUYTSHIRTSPage() {
                 {product.sizes.map((size) => (
                   <span
                     key={size}
-                    className="text-xs font-bold border border-gray-200 px-1.5 py-0.5 text-gray-400 hover:border-black hover:text-black transition-colors"
-                  >
+                    className="text-xs font-bold border border-gray-200 px-1.5 py-0.5 text-gray-400 hover:border-black hover:text-black transition-colors">
                     {size}
                   </span>
                 ))}
@@ -70,8 +67,7 @@ export default function BUYTSHIRTSPage() {
           {visibleCount < products.length ? (
             <button
               onClick={loadMore}
-              className="bg-black hover:text-white text-white hover:bg-gray-900 text-sm font-bold cursor-pointer border px-3 py-2 rounded-sm border-gray-300 transition-all  tracking-widest"
-            >
+              className="bg-black hover:text-white text-white hover:bg-gray-900 text-sm font-bold cursor-pointer border px-3 py-2 rounded-sm border-gray-300 transition-all  tracking-widest">
               No more products to show
             </button>
           ) : (
