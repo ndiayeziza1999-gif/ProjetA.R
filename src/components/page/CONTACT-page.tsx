@@ -39,7 +39,7 @@ export default function CONTACTPage() {
             </li>
           </ul>
         </div>
-        <div className="bg-white p-8 lg:p-16 shadow-sm border border-gray-100 lg:-ml-12 lg:my-12 z-10">
+        <div className="bg-white p-8 lg:p-16  lg:-ml-12 lg:my-12 z-10">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input 

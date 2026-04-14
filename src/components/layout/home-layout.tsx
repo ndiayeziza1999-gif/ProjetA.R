@@ -38,12 +38,10 @@ export default function HomeLayout() {
           <button className="hover:text-black cursor-pointer transition-colors">
             <FaMagnifyingGlass />
           </button>
-          <Link to="/Auth/LogIn" className="hover:bg-black text-white text-lg rounded-sm px-2 py-2 bg-cyan-950">
+          <Link to="/Auth/LogIn" className=" text-black text-lg rounded-sm px-2 py-2 ">
             Login
           </Link>
-          <Link to="/Auth/Register" className="hover:bg-black text-white text-lg rounded-sm px-2 py-2 bg-cyan-950">
-          Resister
-          </Link>
+         
         </div>
       </nav>
 

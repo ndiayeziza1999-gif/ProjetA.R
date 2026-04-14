@@ -3,7 +3,7 @@ import { Menproduits } from '../../data/type'
 
 export default function MENPage() {
   return (
-     <section className="bg-white py-16 px-6 md:px-20">
+     <section className="bg-white py-16 px-6 md:px-70">
       <div className=" mb-12">
           <span className="text-gray-400 text-xs font-medium italic ">
             <Link to="/">Home</Link> / Men
@@ -21,7 +21,7 @@ export default function MENPage() {
                 Popular T-Shirts Men
               </h2>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {Menproduits.map((product) => (
                 <div
                   key={product.id}

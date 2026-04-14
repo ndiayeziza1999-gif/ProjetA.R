@@ -41,7 +41,7 @@ export default function TSHIRTSPage() {
         </div>
       </div>
 
-      <section className="bg-white py-16 px-6 md:px-20">
+      <section className="bg-white py-16 px-6 md:px-70">
         <div className="text-center mb-12">
           <span className="text-gray-400 text-xs font-medium italic tracking-wide">
             Summer Collection
@@ -50,13 +50,13 @@ export default function TSHIRTSPage() {
             Popular T-Shirts
           </h2>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product) => (
             <div
               key={product.id}
-              className="group cursor-pointer flex flex-col"
+              className="group cursor-pointer flex flex-col max-w-[200px] mx-auto"
             >
-              <div className="aspect-4/5 overflow-hidden bg-gray-100 mb-4 relative">
+              <div className="aspect-4/5 overflow-hidden bg-gray-100 mb-1 relative-xl">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -124,7 +124,7 @@ export default function TSHIRTSPage() {
       </section>
 
       <div className="bg-[url(https://images.pexels.com/photos/34579415/pexels-photo-34579415.jpeg)] bg-cover bg-fixed bg-center ">
-        <div className="bg-black/30 backdrop-brightness-50text-white w-full h-screen rounded-lg flex-col flex items-center justify-center">
+        <div className="bg-black/30  w-full h-screen rounded-lg flex-col flex items-center justify-center ">
           <h1 className="text-2xlfont-semibold text-white mb-2">
             New Collection
           </h1>
@@ -166,7 +166,7 @@ export default function TSHIRTSPage() {
       </div>
     </div>
 
-        <section className="py-20 px-10 md:px-20">
+        <section className="py-16 px-6 md:px-70">
           <div className="text-center mb-12">
             <span className="text-gray-400 text-xs font-medium ">
               Summer Collection
@@ -174,7 +174,7 @@ export default function TSHIRTSPage() {
             <h2 className="text-3xl font-bold mt-2">On Sale T-Shirts</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {saleProducts.map((product) => (
               <div key={product.id} className=" cursor-pointer">
                 <div className="relative  bg-gray-100 mb-4">
