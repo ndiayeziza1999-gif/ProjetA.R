@@ -10,6 +10,7 @@ import BUYTSHIRTSPage from "./components/page/BUYT-SHIRTS-page";
 import { Toaster } from "sonner";
 import CONTACTPage from "./components/page/CONTACT-page";
 import ABOUTPage from "./components/page/ABOUT-page";
+import PageDetails from "./components/page/Page-Details";
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/" element={<HomeLayout />}>       
             <Route index element={<TSHIRTSPage />} />
             <Route path="/BUYT-SHIRTS" element={<BUYTSHIRTSPage />} />
+            <Route path="/product/:id" element={<PageDetails />} />
             <Route path="/women" element={<WOMENPage />} />
             <Route path="/men" element={<MENPage />} />
             <Route path="/about" element={<ABOUTPage />} />

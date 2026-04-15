@@ -11,12 +11,12 @@ export type MenuListType = {
 export interface Produit {
   id: number;
   name: string;
-  price: number;
+  price: number; 
   category: "Men" | "Women";
   image: string;
   description: string;
-  color: string;
-
+  colors?: string[]; 
+  sizes?: string[];  
 }
 
 

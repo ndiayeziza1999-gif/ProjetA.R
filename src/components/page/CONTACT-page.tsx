@@ -14,7 +14,7 @@ export default function CONTACTPage() {
       </div>
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2">
 
-        <div className="p-12 lg:p-20 flex flex-col justify-center">
+        <div className="p-12 lg:p-20 flex flex-col justify-center bg-pink-100">
           <h3 className="text-4xl font-bold mb-6">Get in touch</h3>
           <p className="text-gray-500 mb-10 leading-relaxed max-w-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id leo tempor, congue justo at, lobortis orci.

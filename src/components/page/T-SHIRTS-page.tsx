@@ -54,15 +54,19 @@ export default function TSHIRTSPage() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="group cursor-pointer flex flex-col max-w-[200px] mx-auto"
-            >
+              className="group cursor-pointer flex flex-col max-w-[200px] mx-auto">
               <div className="aspect-4/5 overflow-hidden bg-gray-100 mb-1 relative-xl">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
-                />
-              </div>
+                <Link to={`/product/${product.id}`}>
+                <div className="aspect-[4/5] overflow-hidden bg-gray-100 mb-4 relative">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                  />
+                </div>
+              </Link>
+                </div>
+              
               <span className="text-10px uppercase tracking-[0.15em] text-gray-400 mb-1">
                 {product.category}
               </span>
@@ -76,16 +80,14 @@ export default function TSHIRTSPage() {
                 {product.colors.map((color, index) => (
                   <div
                     key={index}
-                    className={`w-3.5 h-3.5 ${color} border border-gray-200 rounded-none shadow-sm cursor-pointer hover:ring-1 ring-gray-400`}
-                  />
+                    className={`w-3.5 h-3.5 ${color} border border-gray-200 rounded-none shadow-sm cursor-pointer hover:ring-1 ring-gray-400`}/>
                 ))}
               </div>
               <div className="flex flex-wrap gap-1">
                 {product.sizes.map((size) => (
                   <span
                     key={size}
-                    className="text-[9px] font-bold border border-gray-200 px-1.5 py-0.5 text-gray-400 hover:border-black hover:text-black transition-colors"
-                  >
+                    className="text-[9px] font-bold border border-gray-200 px-1.5 py-0.5 text-gray-400 hover:border-black hover:text-black transition-colors">
                     {size}
                   </span>
                 ))}
@@ -173,7 +175,6 @@ export default function TSHIRTSPage() {
             </span>
             <h2 className="text-3xl font-bold mt-2">On Sale T-Shirts</h2>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {saleProducts.map((product) => (
               <div key={product.id} className=" cursor-pointer">
@@ -184,8 +185,7 @@ export default function TSHIRTSPage() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
-                  />
+                    className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"/>
                 </div>
                 <span className="text-10px uppercase tracking-widest text-gray-400 mb-1">
                   {product.category}
